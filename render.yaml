@@ -6,6 +6,7 @@ services:
     branch: main
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
+    plan: free
     envVars:
-      - key: 8091109678:AAHulbcooseRnKXXRNa65AFCBsnwPCV367I
+      - key: BOT_TOKEN
         sync: false
