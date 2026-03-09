@@ -1,11 +1,11 @@
 services:
-  - type: worker
+  - type: web  # Меняем с worker на web
     name: telegram-reminder-bot
     runtime: python
-    repo: https://github.com/profit-galievich/bot.py
+    repo:  https://github.com/profit-galievich/bot.py.git
     branch: main
     buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
+    startCommand: python bot.py  # Команда остается той же
     plan: free
     envVars:
       - key: BOT_TOKEN
